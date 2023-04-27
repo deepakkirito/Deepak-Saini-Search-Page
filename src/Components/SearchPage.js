@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import classes from '../Styles/SearchPage.module.scss';
 
-const baseUrl = 'http://localhost:4400/';
+const baseUrl = 'https://liveserver.glitch.me/';
 
 function SearchPage() {
 
