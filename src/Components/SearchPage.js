@@ -9,10 +9,13 @@ function SearchPage() {
 
     const [data, setData] = useState();
     const [type, setType] = useState();
+        const [loading, setLoading] = useState(false);
     const [searchText, setSearchText] = useState();
 
     useEffect(()=>{
+        setLoading(true);
         axios.get(`${baseUrl}data`).then(response => {
+            setLoading(false);
             setData(response.data.ads);
             setType(response.data.type);
         })
@@ -64,6 +67,7 @@ function SearchPage() {
         <main 
         style={data && data.length === 0 ?{'display':'block'} : {'display':'none'}}
         >No Ads Found</main>
+        <main>{loading ? 'Loading Server in 30s' : ''}</main>
       </section>
       <footer>
         Search ads Page
