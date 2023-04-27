@@ -1,0 +1,99 @@
+.SearchPage {
+
+    nav {
+        background-color: black;
+        height: 5vh;
+        color: whitesmoke;
+        padding: 5vh;
+        font-size: 20px;
+
+        input {
+            outline: none;
+            width: 30vw;
+            height:5vh;
+            margin-left: 45vw;
+            border-radius: 15px;
+            padding-left: 15px;
+            border: none;
+
+            &:hover {
+                box-shadow: 0px 0px 10px whitesmoke;
+            }
+        }
+    }
+
+    section {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5vh;
+        margin-bottom: 13vh;
+        margin-left: 5vw;
+
+        div {
+            width: 20vw;
+            margin: 20px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 2px black;
+            
+            &:hover {
+                transform: scale(1.05);
+                transition: all 0.5s;
+                box-shadow: 0px 0px 5px black;
+            }
+            
+            img {
+                width: 100%;
+                border-radius: 20px;
+            }
+            div{ 
+                width: 100%;
+                border: none;
+                margin: 10px;
+                text-align: left;
+                box-shadow: 0px 0px 0px black;
+                &:hover {
+                    transform: scale(1);
+                    box-shadow: 0px 0px 0px black;
+                }
+
+                h2 {
+                    a {
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+
+                p {
+                    padding-right: 15px;
+
+                    &:nth-of-type(1) {
+                        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                        color: green;
+                    }
+
+                    &:nth-of-type(2) {
+                        font-size: 12px;
+                    }
+
+                    &:nth-of-type(3) {
+                        font-family: 'Courier New', Courier, monospace;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        font-size: 50px;
+    }
+
+    footer {
+        background-color: black;
+        color: whitesmoke;
+        height: 7vh;
+        padding-top: 3vh;
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+    }
+}
